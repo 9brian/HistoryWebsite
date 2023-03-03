@@ -1,0 +1,136 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+header {
+  background-color: #2F612F;
+  padding: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 97%;
+}
+
+div {
+  justify-content: center;
+  padding: 15px;
+  background-color: #1F2520;
+  border-radius: 15px;
+  width: 97%;
+}
+
+nav {
+  width: 97.5%;
+	text-align: center;
+	padding: 12px; 
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+nav a {
+	padding: 12px;
+  margin: 50px;
+	border-radius: 15px;
+	color: white;
+	text-decoration: none;
+}
+.navButton:hover {
+	background-color: #6DB36D;
+}
+nav {
+  border: 100px;
+	background-color: #1F2520;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+#showcase {
+  border-radius: 15px;
+  background-color: #1F2520;
+	display: flex;
+	justify-content: center;
+}
+
+.logo {
+	border-radius: 100px;
+	width: 175px;
+	height: 175px;
+	object-fit: contain;
+}
+p {
+  text-align: center;
+}
+a {
+  color: red;
+
+}
+
+.pageLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  width: 20%;
+}
+.container {
+  display: flex;
+  background-color: black;
+}
+
+.ftr {
+  border-radius: 100px;
+  justify-content: center;
+  display: flex;
+}
+.blank_ftr {
+  border-radius: inherit;
+  justify-content: inherit;
+  display: inherit;
+  background-color: black;
+}
+
+/* Flip Animation */
+/* https://www.youtube.com/watch?v=tl_8rSlxPx4 */
+.special_ftr:active {
+  animation: flipHorizontally 3s linear;
+  background-color: black;
+}
+@keyframes flipHorizontally{
+  50%{
+    transform: rotateY(180deg);
+  }
+}
+
+mark{
+  background-color: yellow;
+  color: black;
+}
+
+/* Text changer with button attribute */
+/* https://stackoverflow.com/questions/9913293/change-text-on-hover-then-return-to-the-previous-text */
+
+/* Strip style from button */
+button {
+  color: inherit;
+  background-color: transparent;
+  border-width: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: 0;
+}
+
+button:hover span {
+  display: none
+}
+
+button:hover:before {
+  content: "Greatness from small beginnings "
+}
